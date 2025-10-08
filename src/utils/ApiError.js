@@ -1,4 +1,4 @@
-class ApiError extends Errors{
+class ApiError extends Error{
     constructor(
         statuscode,
         message= "something went wrong",
@@ -10,7 +10,7 @@ class ApiError extends Errors{
         this.data= null
         this.message= message
         this.success= false
-        this.errors=errors
+        this.errors=error
 
 
 
